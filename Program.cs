@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string subject = "Программирование";
+Console.WriteLine(subject.Length);
+foreach (char letter in subject)
+{
+    Console.WriteLine(letter);
+}
+
+
+Console.WriteLine();
+int[] grades = { 4, 5, 3, 5, 4 };
+int sum = 0;
+foreach (int grade in grades)
+{
+    Console.WriteLine(grade);
+    sum += grade;
+}
+double average = (double)sum / grades.Length;
+
+Console.WriteLine($"Сумма оценок :{sum}");
+Console.WriteLine($"Средний балл:{average}");
